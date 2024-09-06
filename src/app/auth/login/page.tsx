@@ -1,17 +1,21 @@
-import {signIn} from '@/auth';
+import {auth} from '@/auth';
+import {redirect} from 'next/navigation';
+import CredentialsForm from './CredentialsForm';
+import GithubForm from './GithubForm';
 
-export default function LoginPage() {
+export default async function LoginPage() {
+  const session = await auth();
+
+  if (session) {
+    return redirect('/profile');
+  }
+
   return (
     <>
       <h1>login</h1>
-      <form
-        action={async () => {
-          'use server';
-          await signIn('github', {redirectTo: '/'});
-        }}
-      >
-        <button type="submit">Signin with GitHub</button>
-      </form>
+      <CredentialsForm />
+      <hr />
+      <GithubForm />
     </>
   );
 }
