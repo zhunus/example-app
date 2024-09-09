@@ -21,6 +21,11 @@ header {
   text-transform: uppercase;
   color: #333;
 }
+
+nav .link {
+  margin-left: 1rem;
+}
+
 main {
   flex: 1;
   padding: 2rem;
