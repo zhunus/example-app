@@ -4,3 +4,50 @@
   font-weight: 600;
   text-transform: uppercase;
 }
+
+.button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .button {
+    width: 100%;
+  }
+}
+
+.github-button {
+  background-color: #333;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.input {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  transition: border-color 0.3s ease;
+}

@@ -1,0 +1,13 @@
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+@media screen and (min-width: 768px) {
+  .loginPage {
+    justify-content: center;
+    align-items: center;
+  }
+}

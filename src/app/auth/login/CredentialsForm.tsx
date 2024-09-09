@@ -8,15 +8,29 @@ export default function CredentialsForm() {
         await signIn('credentials', formData, {redirectTo: '/profile'});
       }}
     >
-      <label>
-        Email
-        <input name="email" type="email" />
-      </label>
-      <label>
-        Password
-        <input name="password" type="password" />
-      </label>
-      <button>Sign In</button>
+      <div className="form-control">
+        <label className="input-label" htmlFor="">
+          Email
+        </label>
+        <input
+          placeholder="Email"
+          className="input"
+          name="email"
+          type="email"
+        />
+      </div>
+      <div className="form-control">
+        <label className="input-label" htmlFor="">
+          Password
+        </label>
+        <input
+          placeholder="Password"
+          className="input"
+          name="password"
+          type="password"
+        />
+      </div>
+      <button className="button">Sign In</button>
     </form>
   );
 }

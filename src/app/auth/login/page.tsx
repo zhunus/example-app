@@ -2,6 +2,7 @@ import {auth} from '@/auth';
 import {redirect} from 'next/navigation';
 import CredentialsForm from './CredentialsForm';
 import GithubForm from './GithubForm';
+import styles from './LoginPage.module.css';
 
 export default async function LoginPage() {
   const session = await auth();
@@ -11,11 +12,9 @@ export default async function LoginPage() {
   }
 
   return (
-    <>
-      <h1>login</h1>
+    <div className={styles.loginPage}>
       <CredentialsForm />
-      <hr />
       <GithubForm />
-    </>
+    </div>
   );
 }
