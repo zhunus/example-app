@@ -7,9 +7,13 @@ export default async function Home() {
     <div>
       <h1>Добро пожаловать в наше приложение!</h1>
       {session ? (
-        <Link href="/profile">Страница профиля</Link>
+        <Link className="link" href="/profile">
+          Страница профиля
+        </Link>
       ) : (
-        <Link href="/auth/login">Войти</Link>
+        <Link className="link" href="/auth/login">
+          Войти
+        </Link>
       )}
     </div>
   );
