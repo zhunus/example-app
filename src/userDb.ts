@@ -4,7 +4,7 @@ export const userDb = [
   {
     name: 'Admin',
     email: 'admin@example.com',
-    image: '/avatar.png',
+    image: '/avatar.jpg',
     password: '12345678',
   },
 ];
