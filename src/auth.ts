@@ -29,7 +29,7 @@ export const {handlers, signIn, signOut, auth} = NextAuth({
             throw new Error('User not found.');
           }
 
-          return {email: user.email, name: user.name, avatar: user.avatar};
+          return {email: user.email, name: user.name, image: user.image};
         } catch (error) {
           console.log(error);
 
