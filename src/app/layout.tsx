@@ -31,11 +31,11 @@ export default async function RootLayout({
           <nav>
             {session ? (
               <Link className="link" href="/profile">
-                Profile
+                Профиль
               </Link>
             ) : (
               <Link className="link" href="/auth/login">
-                Login
+                Войти
               </Link>
             )}
           </nav>

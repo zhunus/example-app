@@ -90,3 +90,63 @@ footer {
   border: 1px solid #eaeaea;
   transition: border-color 0.3s ease;
 }
+
+.error-message {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.warning-message {
+  position: relative;
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  color: #856404;
+  padding: 1rem 2rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .warning-message {
+    max-width: unset;
+  }
+}
+
+.warning-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  color: #ffc107;
+}
+
+.warning-text {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.close-icon {
+  width: 16px;
+  height: 16px;
+  color: #856404;
+}
+
+.close-button:hover .close-icon {
+  color: #533f03;
+}

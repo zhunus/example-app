@@ -9,7 +9,7 @@ export default function GithubForm() {
       }}
     >
       <button className="button github-button" type="submit">
-        Signin with GitHub
+        Войти с GitHub
       </button>
     </form>
   );

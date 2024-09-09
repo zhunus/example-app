@@ -30,7 +30,7 @@ export default async function ProfilePage() {
         }}
       >
         <button className="button" type="submit">
-          Sign Out
+          Выйти
         </button>
       </form>
     </div>
